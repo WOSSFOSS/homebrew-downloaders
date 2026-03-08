@@ -6,6 +6,14 @@ class AnidlMultiDownloaderNx < Formula
   license "MIT"
   head "https://github.com/anidl/multi-downloader-nx.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/WOSSFOSS/homebrew-downloaders/releases/download/anidl-multi-downloader-nx-5.7.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "52e31a53a00fdadcc21f5ac0ffc2d90aa5ed182e10dfa0854c6130052fa3608b"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "6463b59e13c34ad907405dea0cf0b4e857175f669fce8166145daae1ad8c809c"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "2f652ddc66eb1a10989e91f8a573f30d03233934695f5fb5c8ef97084bfff428"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8236b041cb30b0b2cdd550dd3c703fd0597d3ac0ebf7cb52adf0988559e5c318"
+  end
+
   depends_on "node" => :build
   depends_on "p7zip" => :build
   depends_on "pnpm" => :build
